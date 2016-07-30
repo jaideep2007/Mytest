@@ -1,0 +1,7 @@
+sudo fdisk -l
+sudo mkdir /mnt/windows
+sudo nano /etc/fstab
+/dev/sda3      /mnt/windows      ntfs   umask=000,defaults   0 0
+mount -a
+apt install ntfs-config
+
